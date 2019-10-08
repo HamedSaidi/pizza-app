@@ -1,0 +1,273 @@
+.App {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.restaurant {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 2px;
+    border: 1px solid #ebebeb;
+    margin: 8px 0 0;
+    min-height: 120px;
+    overflow: hidden;
+}
+
+.restaurant:hover {
+    background: #eef7fa;
+    box-shadow: 0 1px 1px #cfcac4;
+}
+
+.restaurant .logowrapper {
+  flex: 0 0 98px;
+  text-align: center;
+  border-right: 1px solid #ebebeb;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.logo-n {
+  z-index: 1;
+  max-width: 80px;
+  text-align: left;
+  font-size: 12px;
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  transform: translateY(-50%);
+  margin: auto;
+  left: 0;
+  right: 0
+}
+
+.detailswrapper {
+  flex: 1;
+  min-height: 120px;
+  line-height: 1.7;
+  font-size: 15px;
+  padding: 8px 10px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.restaurantname {
+  padding: 0;
+  font-family: Takeaway Sans Bold,Avant Garde,Century Gothic,Helvetica,Arial,sans-serif;
+  color: #0a3847;
+  font-size: 18px;
+  line-height: 22px;
+  max-height: 66px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.restaurantname a:hover {
+    color: #1574f5;
+}
+
+.kitchens {
+  line-height: 22px;
+  font-family: Roboto Slab,Arial,serif;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 0 4px;
+  color: #666;
+}
+
+.menucard-meal__sidedish-button:hover {
+  background-color: #fff;
+}
+
+.menucard-meal__sidedish-button {
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    border-radius: 0 2px 0 0;
+    color: #1574f5;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.img-link {
+  outline: 0;
+  color: #1574f5;
+}
+
+img {
+  width: 100%;
+  max-height: 80px;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 12px 8px 8px;
+  margin-top: 0;
+  color: #0a3847;
+
+}
+
+.checkbox-inline > span {
+  color: #666;
+  font-size: 12px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+.checkbox {
+  content: "";
+  line-height: 1;
+  font-size: 11px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 400;
+  min-width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  border: 1px solid #999;
+  color: #fff;
+}
+
+.meal__price {
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: -.5px;
+    font-family: Takeaway Sans Bold,Avant Garde,Century Gothic,Helvetica,Arial,sans-serif;
+    color: #ff8000;
+    margin: auto 0 0;
+}
+
+.checkbox-inline {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding-right: 20px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.checkboxgroup {
+  margin-top: 0;
+  padding: 0 0 20px 40px;
+  background-color: #f5f5f5;
+}
+
+.sidedish-checkbox {
+  padding-left: 20px;
+}
+
+.order-btn {
+  position: relative;
+  padding: 6px 16px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: #1574f5;
+  height: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  width: 100%;
+  line-height: 1.29;
+  border-radius: 2px;
+}
+
+.address-btn {
+  margin-top: 12px;
+}
+
+.address-container {
+  margin: auto;
+}
+
+div {
+  text-align: left;
+}
+
+.address-form {
+  text-align: center;
+}
+
+.address-form input {
+  width: 100%;
+  height: 38px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #d7d7d7;
+  color: #666;
+  border-radius: 0;
+  margin-top: 7px;
+}
+
+/* Removes the clear button from month inputs */
+input[type="month"]::-webkit-clear-button {
+  display: none;
+}
+
+/* Removes the spin button */
+input[type="month"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+/* Always display the drop down caret */
+input[type="month"]::-webkit-calendar-picker-indicator {
+  color: #2c3e50;
+}
+
+/* A few custom styles for month inputs */
+input[type="month"] {
+  appearance: none;
+  -webkit-appearance: none;
+  color: #95a5a6;
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 18px;
+  display: inline-block !important;
+  visibility: visible !important;
+}
+
+input[type="month"], focus {
+  color: #95a5a6;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+.App-link {
+  color: #09d3ac;
+}
